@@ -1,0 +1,29 @@
+rozier set
+
+- authors:
+  K. Rozier and M. Vardi
+
+- url:
+  http://shemesh.larc.nasa.gov/people/kyr/benchmarking_scripts/benchmarking_scripts.html
+
+- obtained: (yyyy/mm/dd)
+  2009/04/01
+
+- papers:
+  [1]
+
+- description:
+
+  For the formulas family we only use lengths 10, 20,..., 100 and only
+  instances 1 to 10 for each parameter configuration.
+
+  V. Schuppan scaled up the pattern family from 1/2-13 to 1/2-13, 20,
+  30, ..., 100, 200, 300, ..., 1000.
+  
+- copyright:
+  Please refer to the original site/authors.
+
+- references:
+
+  [1] K. Rozier and M. Vardi. LTL Satisfiability Checking. STTT,
+      12(2), 2010.

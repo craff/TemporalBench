@@ -1,0 +1,23 @@
+schuppan set
+
+- author:
+  V. Schuppan
+
+- url:
+  http://www.schuppan.de/viktor/atva11/
+
+- papers:
+  [1]
+
+- description:
+
+  Families O1formula and O2formula are simple unsat patterns
+  triggering exponential behavior in some solvers. phltl is a temporal
+  formulation of the pigeonhole principle.
+  
+- references:
+
+  [1] V. Schuppan and L. Darmawan. Evaluating LTL Satisfiability
+      Solvers. In: T. Bultan and P. Hsiung (eds.) Automated Technology
+      for Verification and Analysis - 9th International Symposium,
+      ATVA 2011, Taipei, Taiwan, October 11-14, 2011. To appear.

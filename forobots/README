@@ -1,0 +1,29 @@
+forobots set
+
+- authors:
+  A. Behdenna, C. Dixon, and M. Fisher
+ 
+- url:
+  not available
+
+- obtained: (yyyy/mm/dd)
+  2009/10/08
+
+- papers:
+  [1]
+  
+- description:
+  
+  V. Schuppan translated the original benchmarks to propositional LTL.
+
+- copyright:
+  Please refer to the original site/authors.
+
+- references:
+
+  [1] A. Behdenna, C. Dixon, M. Fisher: Deductive Verification of
+      Simple Foraging Robotic Behaviours. International Journal of
+      Intelligent Computing and Cybernetics, World Scientific, 2009.
+
+  [2] M. Ludwig, U. Hustadt: Implementing a Fair Monodic Temporal Logic
+      Prover. AI Communications, 2010.

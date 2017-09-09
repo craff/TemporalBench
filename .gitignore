@@ -1,0 +1,7 @@
+*.pltl.*
+*.ctl.*
+*~
+#*#
+.#*
+depends
+pass.txt

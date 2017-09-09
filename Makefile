@@ -26,6 +26,12 @@ include depends
 	./run.sh $< "../LTL/pltl/pltl" multi ${TIMEOUT} ${MAXMEM}
 
 clean:
+	find . -name *~ -exec rm {} \;
+	find . -name .\#* -exec rm {} \;
+	find . -name \#*\# -exec rm {} \;
+	- rm ctl/pattern/pattern.cm* ctl/pattern/pattern
+
+veryclean: distclean
 	find . -name \*.pltl.\* -exec rm {} \;
 
 distclean: clean

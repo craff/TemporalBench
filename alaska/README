@@ -1,0 +1,32 @@
+alaska set
+
+- authors:
+  Martin De Wulf, Laurent Doyen, Nicolas Maquet, Jean-Francois Raskin
+ 
+- url:
+  http://www.antichains.be/alaska/experiments.html
+
+- obtained: (yyyy/mm/dd)
+  2009/05/06
+
+- papers:
+  [1]
+
+- description
+
+  V. Schuppan scaled up instances in lift from 2-9 to 2-18 and added
+  variants f, l, and f_l. f fixes a bug preventing the lift from
+  leaving floor 0 [2]. l requires to serve each floor infinitely
+  often. f_l combines f and l.
+
+- copyright:
+  Please refer to the original site/authors.
+
+- references:
+
+  [1] M. De Wulf, L. Doyen, N. Maquet, and J. Raskin: Antichains:
+      Alternative Algorithms for LTL Satisfiability and
+      Model-Checking. In TACAS'08.
+
+  [2] V. Schuppan: Towards a notion of unsatisfiable and unrealizable
+      cores for LTL. Science of Computer Programming. In Press.
