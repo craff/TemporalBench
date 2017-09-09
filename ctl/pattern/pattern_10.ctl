@@ -1,0 +1,1 @@
+((A G (E G (p10)) & A G (E G (p9)) & A G (E G (p8)) & A G (E G (p7)) & A G (E G (p6)) & A G (E G (p5)) & A G (E G (p4)) & A G (E G (p3)) & A G (E G (p2)) & A G (E G (p1))) | (A G (E G (~p10)) & A G (E G (~p9)) & A G (E G (~p8)) & A G (E G (~p7)) & A G (E G (~p6)) & A G (E G (~p5)) & A G (E G (~p4)) & A G (E G (~p3)) & A G (E G (~p2)) & A G (E G (~p1))))
