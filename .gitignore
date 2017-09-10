@@ -11,3 +11,4 @@ pass.txt
 *.cma
 *.cmx
 *.cmxa
+.depend
