@@ -1,0 +1,48 @@
+Usage: 
+
+./pltl < input.pltl
+
+Determine whether input.pltl is satisfiable or not
+
+./pltl - < input.pltl
+
+More verbose output
+
+./pltl - output.graph < input.pltl
+
+As above, but print the resulting pseudomodel to output.graph as a GraphViz Dot file
+
+./pltl - output.graph - < input.pltl
+
+As above, but collapse OR chains in the pseudomodel to single nodes
+
+./pltl - output.traces - - < input.pltl
+
+Determine whether input.pltl is satisfiable, and if so print all paths in the pseudomodel up to the first loop
+
+./pltl - output.model - - - < input.pltl
+
+Determine whether input.pltl is satisfiable, and if so construct a model for it using Emerson's unwinding (modified for PLTL from CTL) and print the model to output.model as a GraphViz Dot file
+
+./pltl - output.model - - - - < input.pltl
+
+As above, but also show the intermediate stages of the unwinding process
+
+
+Input format:
+
+~ p	      -- negation
+X p       -- next
+G p       -- globally
+F p       -- eventually
+(p U q)   -- until
+(p B q)   -- before
+(p | q)   -- or
+(p & q)   -- and
+(p => q)  -- implication
+(p <=> q) -- equivalence
+
+
+Example:
+
+ G F p & G F q & G (p => (~q & X~q)) & G (q => (~p & X~p))

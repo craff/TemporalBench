@@ -5,3 +5,9 @@
 .#*
 depends
 pass.txt
+*.o
+*.cmi
+*.cmo
+*.cma
+*.cmx
+*.cmxa

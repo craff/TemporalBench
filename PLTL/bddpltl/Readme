@@ -1,0 +1,43 @@
+bddpltl requires the Buddy bdd package. 
+On Debian systems, the following should work:
+
+apt-get install libbdd-dev
+
+To compile the prover a simple
+
+make
+
+should suffice.
+
+
+To run the prover, use the following:
+
+./bddpltl [args] < input.pltl
+
+with the following arguments:
+
+	 -sat		   Check satisfiability
+	 -valid		   Check validity
+	 -v n		   Set verbosity of output
+	 -silent	   Disable garbage collection messages
+	 -autoreorder  Enable automatic variable reordering
+	 -nonormalise  Do not preprocess the formula
+	 -nosortand	   When computing conjunctions, do not attempt to find a better order
+	 -noassumeG	   Do not convert top-level G-formulae into explicit global assumptions. Mandatory with -valid
+	 -nary		   Treat conjunction and disjunction as n-ary rather than binary, allowing for informed conjunctions/disjunctions unless -nosortand is specified
+
+Note that one of -sat and -valid is required.
+
+The syntax for the prover is as follows
+
+True	   	   	   top
+False			   bottom
+p & q			   conjunction
+p | q			   disjunction
+p => q 			   implication
+p <=> q			   equivalence
+X p	  			   Next
+F p				   Eventuality
+G p				   Always
+(p U q)			   Until
+(p B q) 		   Before
