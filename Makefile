@@ -36,13 +36,20 @@ include depends
 ./PLTL/pltlProver/pltl:
 	cd ./PLTL/pltlProver; make
 
+./mlsolver/bin/mlsolver:
+	opam install ocamlbuild ocamlfind ounit TCSLib extlib ocaml-sat-solvers minisat pgsolver
+	if [ ! -d mlsolver ]; then git clone git@github.com:tcsprojects/mlsolver.git; fi
+	cd mlsolver; git pull; ocaml setup.ml -configure; ocaml setup.ml -build
+
+
 clean:
 	find . -name *~ -exec rm {} \;
 	find . -name .\#* -exec rm {} \;
 	find . -name \#*\# -exec rm {} \;
-	cd ./PLTL/bddpltl; make clean
-	cd ./PLTL/pltl; make clean
-	cd ./PLTL/pltlProver; make clean
+	cd ./PLTL/bddpltl/; make clean
+	cd ./PLTL/pltl/; make clean
+	cd ./PLTL/pltlProver/; make clean
+	cd ./mlsolver/; ocaml setup.ml -clean
 	- rm ctl/pattern/pattern.cm* ctl/pattern/pattern
 
 distclean: clean
@@ -50,6 +57,7 @@ distclean: clean
 	cd ./PLTL/bddpltl; make distclean
 	cd ./PLTL/pltl; make distclean
 	cd ./PLTL/pltlProver; make distclean
+	rm -rf mlsolver
 
 veryveryclean: distclean
 	find . -name \*.pltl.\* -exec rm {} \;
