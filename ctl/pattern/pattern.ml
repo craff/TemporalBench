@@ -2,10 +2,10 @@
 
 let pattern n =
   let rec lit i =
-    "A G (E G (p"^string_of_int i^"))"
+    "AG (EG (p"^string_of_int i^"))"
   in
   let rec nlit i =
-    "A G (E G (~p"^string_of_int i^"))"
+    "AG (EG (~p"^string_of_int i^"))"
   in
   let rec left n =
     if n = 0 then [] else

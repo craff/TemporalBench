@@ -1,1 +1,1 @@
-((A G (E G (p3)) & A G (E G (p2)) & A G (E G (p1))) | (A G (E G (~p3)) & A G (E G (~p2)) & A G (E G (~p1))))
+((AG (EG (p3)) & AG (EG (p2)) & AG (EG (p1))) | (AG (EG (~p3)) & AG (EG (~p2)) & AG (EG (~p1))))

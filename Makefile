@@ -41,6 +41,23 @@ include depends
 	if [ ! -d mlsolver ]; then git clone git@github.com:tcsprojects/mlsolver.git; fi
 	cd mlsolver; git pull; ocaml setup.ml -configure; ocaml setup.ml -build
 
+./ctlProver/ctl:
+	if [ ! -d ctlProver ]; then \
+          wget http://rsise.anu.edu.au/~rpg/CTLProvers/ctlProver_r1368.tar -nv -O - | tar x; fi
+	cd ctlProver; make
+
+./ctlGraph/ctl:
+	if [ ! -d ctlgraph ]; then \
+          wget http://rsise.anu.edu.au/~rpg/CTLProvers/ctlgraph.tar -nv -O - | tar x; fi
+	mv graph ctlGraph
+	cd ctlGraph; make
+
+./ctlBDD/ctl:
+	if [ ! -d ctlgraph ]; then \
+          wget http://rsise.anu.edu.au/~rpg/CTLProvers/bddctl.tgz -nv -O - | tar xz; fi
+	mv bddctl ctlBDD
+	#cd ctlGraph; make
+
 
 clean:
 	find . -name *~ -exec rm {} \;
